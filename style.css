@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font: 25px;
+}
+body{
+    background-image: url(./pngtree-white.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+@media only screen and (max-width:700px) {
+    body{
+        background-image: url(./mountain-doggo.jpg);
+    }
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+.logo{
+    color: rgb(8, 12, 129);
+}
+.logo:hover{
+    color: white;
+    background-color: blue;
+}
+.items li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    background-color: transparent;
+}
+.items li a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    transition: all 1s linear;
+}
+.items li a:hover{
+    color: white;
+    background-color: blue;
+}
+#btn{
+    background-color:transparent;
+    font-size: 22px;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 8px;
+    animation: button 4s linear 1s infinite normal ;
+}
+#btn{
+    transform: rotateX(360deg);
+}
+@keyframes button {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: green;
+    }
+}
+#btn:hover{
+    color: black;
+}
+.title{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+}
+#head{
+    text-align: center;
+    padding: 10px;
+    color: rgb(2, 62, 2);
+    font-size: var(--font);
+    font-weight: bold;
+}
+.image{
+    width:330px;
+    border: 5px solid black;
+    display: inline-block;
+}
+.image:hover{
+    background-color: black;
+    color: white;
+}
+.para{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule-style: solid;
+}
+#detail:hover{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.06)0px 2px 4px 0px inset;
+}
+form{
+    width: 60%;
+    background-color:transparent;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 4px;
+    border: 5px solid #ffff;
+}
+input{
+    padding: 10px 10px;
+    margin: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+span{
+    font-size: 25px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    
+}
+.pagination a{
+    color: black;
+    padding:10px 15px 10px 5px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pagination a:hover{
+    background-color: blue;
+    color: white;
+}
+#foot{
+    height: 70px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    border-top: 2px solid black;
+    color: black;
+    font-weight: bold; 
+}
